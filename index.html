@@ -12,11 +12,32 @@
         <h1>Anime List Checklist</h1>
         <p>23 August 2022 &nbsp; 06:58</p>
     </header>
+    <div class = "header-container">
     <div class="search-container">
         <input type="text" id="searchBar" placeholder="Search for anime...">
         <img src="https://imgur.com/Jy8sa1h.png" alt="Search Icon" class="search-icon">
     </div>
-    <button id="toggleMode">Toggle Dark/Light Mode</button>
+    <label class="theme-switch">
+        <input type="checkbox" id="theme-toggle" class="theme-switch__checkbox">
+        <div class="theme-switch__container">
+          <div class="theme-switch__clouds"></div>
+          <div class="theme-switch__stars-container">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144 55" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M135.831 3.00688C135.055 3.85027 134.111 4.29946 133 4.35447C134.111 4.40947 135.055 4.85867 135.831 5.71123C136.607 6.55462 136.996 7.56303 136.996 8.72727C136.996 7.95722 137.172 7.25134 137.525 6.59129C137.886 5.93124 138.372 5.39954 138.98 5.00535C139.598 4.60199 140.268 4.39114 141 4.35447C139.88 4.2903 138.936 3.85027 138.16 3.00688C137.384 2.16348 136.996 1.16425 136.996 0C136.996 1.16425 136.607 2.16348 135.831 3.00688ZM31 23.3545C32.1114 23.2995 33.0551 22.8503 33.8313 22.0069C34.6075 21.1635 34.9956 20.1642 34.9956 19C34.9956 20.1642 35.3837 21.1635 36.1599 22.0069C36.9361 22.8503 37.8798 23.2903 39 23.3545C38.2679 23.3911 37.5976 23.602 36.9802 24.0053C36.3716 24.3995 35.8864 24.9312 35.5248 25.5913C35.172 26.2513 34.9956 26.9572 34.9956 27.7273C34.9956 26.563 34.6075 25.5546 33.8313 24.7112C33.0551 23.8587 32.1114 23.4095 31 23.3545ZM0 36.3545C1.11136 36.2995 2.05513 35.8503 2.83131 35.0069C3.6075 34.1635 3.99559 33.1642 3.99559 32C3.99559 33.1642 4.38368 34.1635 5.15987 35.0069C5.93605 35.8503 6.87982 36.2903 8 36.3545C7.26792 36.3911 6.59757 36.602 5.98015 37.0053C5.37155 37.3995 4.88644 37.9312 4.52481 38.5913C4.172 39.2513 3.99559 39.9572 3.99559 40.7273C3.99559 39.563 3.6075 38.5546 2.83131 37.7112C2.05513 36.8587 1.11136 36.4095 0 36.3545ZM56.8313 24.0069C56.0551 24.8503 55.1114 25.2995 54 25.3545C55.1114 25.4095 56.0551 25.8587 56.8313 26.7112C57.6075 27.5546 57.9956 28.563 57.9956 29.7273C57.9956 28.9572 58.172 28.2513 58.5248 27.5913C58.8864 26.9312 59.3716 26.3995 59.9802 26.0053C60.5976 25.602 61.2679 25.3911 62 25.3545C60.8798 25.2903 59.9361 24.8503 59.1599 24.0069C58.3837 23.1635 57.9956 22.1642 57.9956 21C57.9956 22.1642 57.6075 23.1635 56.8313 24.0069ZM81 25.3545C82.1114 25.2995 83.0551 24.8503 83.8313 24.0069C84.6075 23.1635 84.9956 22.1642 84.9956 21C84.9956 22.1642 85.3837 23.1635 86.1599 24.0069C86.9361 24.8503 87.8798 25.2903 89 25.3545C88.2679 25.3911 87.5976 25.602 86.9802 26.0053C86.3716 26.3995 85.8864 26.9312 85.5248 27.5913C85.172 28.2513 84.9956 28.9572 84.9956 29.7273C84.9956 28.563 84.6075 27.5546 83.8313 26.7112C83.0551 25.8587 82.1114 25.4095 81 25.3545ZM136 36.3545C137.111 36.2995 138.055 35.8503 138.831 35.0069C139.607 34.1635 139.996 33.1642 139.996 32C139.996 33.1642 140.384 34.1635 141.16 35.0069C141.936 35.8503 142.88 36.2903 144 36.3545C143.268 36.3911 142.598 36.602 141.98 37.0053C141.372 37.3995 140.886 37.9312 140.525 38.5913C140.172 39.2513 139.996 39.9572 139.996 40.7273C139.996 39.563 139.607 38.5546 138.831 37.7112C138.055 36.8587 137.111 36.4095 136 36.3545ZM101.831 49.0069C101.055 49.8503 100.111 50.2995 99 50.3545C100.111 50.4095 101.055 50.8587 101.831 51.7112C102.607 52.5546 102.996 53.563 102.996 54.7273C102.996 53.9572 103.172 53.2513 103.525 52.5913C103.886 51.9312 104.372 51.3995 104.98 51.0053C105.598 50.602 106.268 50.3911 107 50.3545C105.88 50.2903 104.936 49.8503 104.16 49.0069C103.384 48.1635 102.996 47.1642 102.996 46C102.996 47.1642 102.607 48.1635 101.831 49.0069Z" fill="currentColor"></path>
+            </svg>
+          </div>
+          <div class="theme-switch__circle-container">
+            <div class="theme-switch__sun-moon-container">
+              <div class="theme-switch__moon">
+                <div class="theme-switch__spot"></div>
+                <div class="theme-switch__spot"></div>
+                <div class="theme-switch__spot"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </label>
+    </div>
     <table id="animeTable">
         <tr>
             <td>
@@ -186,7 +207,7 @@
                 <img src="https://m.media-amazon.com/images/M/MV5BNTYxMzVhMjAtYzBmMi00ZDA2LWJlNzItNGVkYmU0ZGU0NGRmXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_.jpg" alt="In Another World With My Smartphone">
             </td>
         </tr>
-       <tr>
+        <tr>
             <td>
               <h2>37. Death March to the Parallel World Rhapsody</h2>
               <img src="https://m.media-amazon.com/images/M/MV5BMjc5YWExOTAtMzg0NS00ODZlLTlkYzUtNjkxM2YwMTkwMWYzXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_.jpg" alt="Death March"> 
@@ -201,7 +222,7 @@
             </td>
             <td>
               <h2>40. How Not to Summon a Demon Lord</h2>
-              <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/30317658143e7a45be534282721393c4.jpe" alt="Demon Lord">
+              <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/30317658143e7a45be534282721393c4.jpe " alt="Demon Lord">
             </td>
           </tr>
         
@@ -242,6 +263,7 @@
               <img src="https://m.media-amazon.com/images/M/MV5BMjIzOTkwNTctZGYyNy00MDAxLWFkZjItN2ZiMjA4YzA3MTRhXkEyXkFqcGdeQXVyMTM0NDkxNDIz._V1_.jpg" alt="Boring World">
             </td>
           </tr>
+        
           <tr>
             <td>
               <h2>49. Jujutsu Kaisen</h2>
@@ -260,7 +282,7 @@
               <img src="https://m.media-amazon.com/images/M/MV5BYmEyZWNlMjAtYzNiYi00NjAwLTg5ZmItOWFhNjBlYmU2YjY2XkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_.jpg" alt="Masamune-kun">
             </td>
           </tr>
-         <tr>
+          <tr>
             <td>
                 <h2>53. And You Thought There Was Never a Girl Online</h2>
                 <img src="https://m.media-amazon.com/images/M/MV5BOWFmMTFkYzgtZDliMy00NmRhLWE0NWYtNTNmNmMyMGUwOGZmXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_FMjpg_UX1000_.jpg" alt="There Was Never a Girl Online">
@@ -278,7 +300,7 @@
                 <img src="https://m.media-amazon.com/images/M/MV5BNjcwNTMyZDEtMTc3ZS00OGVkLTlhZDktZDUyZTI4MzEzMjNiXkEyXkFqcGdeQXVyMTA3OTEyODI1._V1_FMjpg_UX1000_.jpg" alt="Cautious Hero">
             </td>
           </tr>
-        <tr>
+          <tr>
             <td> 
                 <h2>57. Why the hell are you here, Teacher!?</h2>
                 <img src="https://m.media-amazon.com/images/M/MV5BZjk0OWYzNjgtYTViNS00M2YzLWJlYjEtMTBjMTNjOTZhYWNiXkEyXkFqcGdeQXVyNDQxNjcxNQ@@._V1_.jpg" alt="Why the hell are you here, Teacher!?">
@@ -296,7 +318,765 @@
                 <img src="https://m.media-amazon.com/images/M/MV5BMTM5NjhlNTMtZDZlZi00ZDQ0LTk4ZjItZjIzNWY5NmQzNTU4XkEyXkFqcGdeQXVyMjIxNjY2NjE@._V1_FMjpg_UX1000_.jpg" alt="My Girlfriend Is Shobitch">
             </td>
           </tr>
-        
+          <tr>
+            <td> 
+                <h2>61. Mushoku Tensei: Jobless Reincarnation</h2>
+                <img src="https://m.media-amazon.com/images/M/MV5BMGM2MzA5YzYtODc0Ni00ZjU4LWI4ZmUtZGJjNGU0ODY1MGJkXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_.jpg" alt="Jobless Reincarnation">
+            </td>
+            <td>
+                <h3>62. Yosuga No Sora</h3>
+                <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/eadc80d11aab52e6b8e6b640b9ad5ac0.jpe" alt="Yosuga No Sora">
+            </td>
+            <td>
+                <h3>63. The Disastrous Life of Saiki K.</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BYmFiNTU2YWUtZjVjYy00MDJmLThlNzMtYTBhNzZmMmUyN2JlXkEyXkFqcGdeQXVyMTMzNDc0Nzky._V1_FMjpg_UX1000_.jpg" alt="The Disastrous Life of Saiki K.">
+            </td>
+            <td>
+                <h3>64. Tonikawa: Over the Moon For You</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BMGRlYzIyZTAtNGM2OC00NzFkLTkzZGQtNjViYTI1NzM4MjEzXkEyXkFqcGdeQXVyMTUyNjc3NDQ4._V1_.jpg" alt="Tonikawa">
+            </td>
+          </tr>
+          <tr>
+            <td> 
+                <h2>65. Prison School</h2>
+                <img src="https://m.media-amazon.com/images/M/MV5BOGQzNzEzMDQtZDk3ZS00MjE3LThjZWItMDFhY2Y1NmI4NGUyXkEyXkFqcGdeQXVyMTM0NDkxNDIz._V1_.jpg" alt="Prison School">
+            </td>
+            <td>
+                <h3>66. Kaguya-sama: Love Is War</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BYjEwNjEwYzgtZGZkMy00MTBjLTg2MmYtNDk0MzY2NmU0MmNiXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_FMjpg_UX1000_.jpg" alt="Kaguya-sama">
+            </td>
+            <td>
+                <h3>67. Call of the Night</h3>
+                <img src="https://www.fujitv.com/wp-content/uploads/2022/06/f60f1ab1978715a867dbb189f78b2be5.jpg" alt="Call of the Night">
+            </td>
+            <td>
+                <h3>68. The Yakuza's Guide to Babysitting</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BYWViNmIzYWYtZjNhZS00ZjVjLWJkNjYtYTBkZWI1NjE3NDczXkEyXkFqcGdeQXVyMzUzMzgxNA@@._V1_.jpg" alt="The Yakuza's Guide to Babysitting">
+            </td>
+          </tr>
+          <tr>
+            <td> 
+                <h2>69. My Stepmom's Daughter is My Ex</h2>
+                <img src="https://m.media-amazon.com/images/M/MV5BYzI1Yzc2YTktNTdlYi00NzQwLWE3MTEtZTQ0ZGU1YWUyN2Q3XkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_.jpg" alt="My Stepmoms Daughter is My Ex">
+            </td>
+            <td>
+                <h3>70. Isekai Ojisan</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BNDkyZDQ3Y2MtMDM2OC00ZjE5LTgxMWUtNmNkNzkyOTA1M2UzXkEyXkFqcGdeQXVyMTUzNzc3NDAz._V1_.jpg" alt="Isekai Ojisan">
+            </td>
+            <td>
+                <h3>71. Vermeil in Gold</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BZTY4ZjY5ZDItZDdlYS00MTdmLTgzOWItODc4MTc4NzllM2RhXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_.jpg" alt="Vermeil in Gold">
+            </td>
+            <td>
+                <h3>72. Parallel World Pharmacy</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BNmFiZjY4NzMtMzM0Ny00ODYzLThiOGUtZmE5OTY2YjZmOTA3XkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_FMjpg_UX1000_.jpg" alt="Parallel World Pharmacy">
+            </td>
+          </tr>
+          <tr>
+            <td> 
+                <h2>73. Harem in the Labyrinth of Another World</h2>
+                <img src="https://m.media-amazon.com/images/M/MV5BMGI5ZjgwODMtNDFmNS00MTJmLWE0OTEtODhjMDBmYzYyMjMyXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_.jpg" alt="Harem in the Labyrinth of Another World">
+            </td>
+            <td>
+                <h3>74. Chainsaw Man</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BZjY5MDFhZTgtOGVhMi00NTUzLTk5NjktNmRlMjI3NjI4MmE0XkEyXkFqcGdeQXVyMTMzNDExODE5._V1_.jpg" alt="Chainsaw Man">
+            </td>
+            <td>
+                <h3>75. A Silent Voice</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BZGRkOGMxYTUtZTBhYS00NzI3LWEzMDQtOWRhMmNjNjJjMzM4XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg" alt="A Silent Voice">
+            </td>
+            <td>
+                <h3>76. Boarding School Juliet</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BZWViYTk5YTQtZGQyYS00MmE4LWIxZWItNGYyNDkxNzlhN2UyXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_.jpg" alt="Boarding School Juliet">
+            </td>
+          </tr>
+          <tr>
+            <td> 
+                <h2>77. Solo Leveling</h2>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjjydKUpH1rz3V2N2oTcKX7O3QIMkH_-xqqw&s" alt="Solo Leveling">
+            </td>
+            <td>
+                <h3>78. Girlfriend, Girlfriend</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BNDNhZTJkZmUtOWNhZS00OWQwLTkxNTQtNTUxMjIzOWRiODMwXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_FMjpg_UX1000_.jpg" alt="Girlfriend, Girlfriend">
+            </td>
+            <td>
+                <h3>79. Don't Toy with Me, Miss Nagatoro</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BNDdlYWU4ZTktZDcxZC00ZGU1LTkxODItYmJiMzI0ODc0MDUyXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_FMjpg_UX1000_.jpg" alt="Don't Toy with Me, Miss Nagatoro">
+            </td>
+            <td>
+                <h3>80. Spare Me, Great Lord!</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BNGE3ZDU4MTAtODQxNy00ZGY0LWFhOGQtMjY2MWY3NjkzNjExXkEyXkFqcGdeQXVyOTE4NzcwNzI@._V1_FMjpg_UX1000_.jpg" alt="Spare Me, Great Lord!">
+            </td>
+          </tr>
+          <tr>
+            <td> 
+                <h2>81. The Daily Life of the Immortal King</h2>
+                <img src="https://m.media-amazon.com/images/M/MV5BMmUyMmE3ZmMtYzZlYS00NmNkLThjMGQtZmVkODFjYjcwMmVjXkEyXkFqcGdeQXVyOTI5MTc1OTM@._V1_.jpg" alt="The Daily Life of the Immortal King">
+            </td>
+            <td>
+                <h3>82. Wandering Witch: The Journey of Elaina</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BNWI4MGE4MTEtYjFiYS00NmIxLWEyYzYtNTdlYzBjMjI5NjdmXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_.jpg" alt="Wandering Witch">
+            </td>
+            <td>
+                <h3>83. Teasing Master Takagi-san</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BY2FlZjc5NDItMDYzOS00Y2NjLWEyZjgtOTVmZTBmOTk5N2I4XkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_FMjpg_UX1000_.jpg" alt="Teasing Master Takagi-san">
+            </td>
+            <td>
+                <h3>84. KochiKame: Tokyo Beat Cops</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BZmY4MjM1NDAtMWFmNi00ZDNhLTlmOGQtNTc5MzZjNmU2NTkzXkEyXkFqcGdeQXVyMzkzODQwMA@@._V1_.jpg" alt="KochiKame">
+            </td>
+          </tr>
+          <tr>
+            <td> 
+                <h2>85. Moriarty the Patriot</h2>
+                <img src="https://m.media-amazon.com/images/M/MV5BMWM2YTY2MDgtNTZjYS00ZGUwLTkyMzEtYzJlNjhlZjBlZjgzXkEyXkFqcGdeQXVyMTQyMTMwOTk0._V1_.jpg" alt="Moriarty the Patriot">
+            </td>
+            <td>
+                <h3>86. Higehiro: After Being Rejected, I Shaved and Took in a High School Runaway</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BYmFkMjlhNzUtOGFlOS00YjQwLThkNTAtNjRiN2Q0YjdiODQyXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_.jpg" alt="Higehiro">
+            </td>
+            <td>
+                <h3>87. OreGairu</h3>
+                <img src="https://i0.wp.com/img1.ak.crunchyroll.com/i/spire2/320673efcacdbdb0d6222156f8d797ce1476015938_full.jpg" alt="OreGairu">
+            </td>
+            <td>
+                <h3>88. Oresuki</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BNGZmZGJkOTEtMDAzOS00NGE0LWExY2EtNWFkODI1MjQxY2JmXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_FMjpg_UX1000_.jpg" alt="Oresuki">
+            </td>
+          </tr>
+          <tr>
+            <td> 
+                <h2>89. Redo of Healer</h2>
+                <img src="https://m.media-amazon.com/images/M/MV5BZDg5OTgzNTEtMDJmOS00MWMzLWFmYmQtNTNlZjg5YjI1YjRiXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_FMjpg_UX1000_.jpg" alt="Redo of Healer">
+            </td>
+            <td>
+                <h3>90. Overflow</h3>
+                <img src="https://www.animenewsnetwork.com/images/encyc/A22921-2332238823.1576022963.jpg" alt="Overflow">
+            </td>
+            <td>
+                <h3>91. A Couple of Cuckoos</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BNDdhMzk3N2YtZDRhOC00M2RmLWIzMmEtNTMzNGUwZjA2MjFiXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_.jpg" alt="A Couple of Cuckoos">
+            </td>
+            <td>
+                <h3>92. Spy × Family</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BZDY5NTI3ZjUtNGY5ZC00MmE1LWI0ZTUtNDI3YTQ0NGFkMWJlXkEyXkFqcGdeQXVyNTgyNTA4MjM@._V1_FMjpg_UX1000_.jpg" alt="Spy × Familyh">
+            </td>
+          </tr>
+          <tr>
+            <td> 
+                <h2>93. My Dress-Up Darling</h2>
+                <img src="https://m.media-amazon.com/images/M/MV5BMzkyYWY3NTEtYzBkNC00Zjc3LThmY2UtZWU3MTRkMTgwODU5XkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_.jpg" alt="My Dress-Up Darling">
+            </td>
+            <td>
+                <h3>94. World's End Harem</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BZmRlY2FiYmQtMjU0NC00Y2E0LThmOTgtMmQxMGI5NzhjNDU4XkEyXkFqcGdeQXVyMTQ3MjMyMTYz._V1_.jpg" alt="World's End Harem">
+            </td>
+            <td>
+                <h3>95. Summer Ghost</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BMDdlYmMyZTQtODY1Zi00ZWZhLWJmYzQtMzJjYzBlODIwODRlXkEyXkFqcGdeQXVyMTI1NTgzODgw._V1_.jpg" alt="Summer Ghost">
+            </td>
+            <td>
+                <h3>96. Tokyo Revengers</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BMTdmYmVlODktNWM0Yi00NDNlLWJhMjQtMzg1MzVhYzU1N2IwXkEyXkFqcGdeQXVyMTcxNDcyNDA4._V1_FMjpg_UX1000_.jpg" alt="Tokyo Revengers">
+            </td>
+          </tr>
+          <tr>
+            <td> 
+                <h2>97. JoJo's Bizarre Adventure</h2>
+                <img src="https://m.media-amazon.com/images/M/MV5BZDc3NGQ3ZWQtYjNkOC00MjhiLTg2N2YtNmZlOGNiZTFkOWNhXkEyXkFqcGdeQXVyNjc2NjA5MTU@._V1_FMjpg_UX1000_.jpg" alt="JoJo's Bizarre Adventure">
+            </td>
+            <td>
+                <h3>98. Darling in the Franxx</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BZGVlY2ZhM2ItMWIwZC00YjU0LWJjNjAtZGVlNWJkM2JmZjhmXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_FMjpg_UX1000_.jpg" alt="Darling in the Franxx">
+            </td>
+            <td>
+                <h3>99. Shikimori isn't just a cutie</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BYjhkY2EyYjEtYjhlNS00ZmRiLWFmNjktNjJjNTJmYWQ2ZjMyXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_.jpg" alt="Shikimori isn't just a cutie">
+            </td>
+            <td>
+                <h3>100. Weathering with You</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BMDhjOTcyODctZDIwMS00N2Q1LWE2YjQtMzVmMTkwMzM0NDA4XkEyXkFqcGdeQXVyMTA4NjE0NjEy._V1_.jpg" alt="Weathering with You">
+            </td>
+          </tr>
+          <tr>
+            <td> 
+                <h2>101. Grand Blue Dreaming</h2>
+                <img src="https://m.media-amazon.com/images/M/MV5BMTNjNGRhZWYtN2U0Yi00ZjU4LWI0MTUtZTc4ZDI0ZTk0YzI2XkEyXkFqcGdeQXVyNDQxNjcxNQ@@._V1_FMjpg_UX1000_.jpg" alt="Grand Blue">
+            </td>
+            <td>
+                <h3>102. The 100 Girlfriends Who Really, Really, Really, Really, Really Love You</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BYWRiMWQ5YmQtZjEzMC00ZGVlLThhNTUtYmZiYzVkM2U1MjI0XkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_FMjpg_UX1000_.jpg" alt="The 100 Girlfriends">
+            </td>
+            <td>
+                <h3>103. Rascal Does Not Dream of Bunny Girl Senpai</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BMGQ1ZjYzOGQtOWFhNy00YzQwLWEyYmItZGYwODQ4NDU3MDhlXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_.jpg" alt="Bunny Girl Senpai">
+            </td>
+            <td>
+                <h3>104. We Never Learn</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BNjc0MDAyNTYtNGMwZS00NDZlLWIyMDEtYWUwMWJjNGZlNjAwXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_.jpg" alt="We Never Learn">
+            </td>
+          </tr>
+          <tr>
+            <td> 
+                <h2>105. Domestic Girlfriend</h2>
+                <img src="https://m.media-amazon.com/images/M/MV5BM2RmZmI2NmUtNDhjMi00MGQ4LWIyYTEtZmMxM2E1ZjBkYTU0XkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_.jpg" alt="Domestic Girlfriend">
+            </td>
+            <td>
+                <h3>106. Regina Rena: To the Unforgiven</h3>
+                <img src="https://cdn.novelupdates.com/images/2020/08/650x855_A1.jpg" alt="Regina Rena">
+            </td>
+            <td>
+                <h3>107. Komi Can't Communicate</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BZmQzNTdjYjctYzM5OS00ZjFmLWJjYmYtZDYwZGYyYjkwODRhXkEyXkFqcGdeQXVyMTQ3MjMyMTYz._V1_FMjpg_UX1000_.jpg" alt="Komi Can't Communicate">
+            </td>
+            <td>
+                <h3>108. My Isekai Life: I Gained a Second Class and Became the Strongest Sage in the World!</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BNDk3ODk2MGUtZDgwNC00MWQ1LTlkNTgtNDNjNTM1NzBjNmNkXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_FMjpg_UX1000_.jpg" alt="My Isekai Life">
+            </td>
+          </tr>
+          <tr>
+            <td> 
+                <h2>109. The God of High School</h2>
+                <img src="https://m.media-amazon.com/images/M/MV5BYjljYmYzNjMtZWY5YS00OGZjLTk4MTYtNDZmYzkxYjgyMDMzXkEyXkFqcGdeQXVyODM2NjQzOTA@._V1_.jpg" alt="The God of High School">
+            </td>
+            <td>
+                <h3>110. Takt Op. Destiny</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BMjU2YTg2MjgtODk0ZC00NGI4LWJmZmItNmM2MDkwYzQ4YTBhXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_FMjpg_UX1000_.jpg" alt="takt op.Destiny">
+            </td>
+            <td>
+                <h3>111. Osamake: Romcom Where The Childhood Friend Won't Lose</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BYjc3MTY3Y2UtYThmMy00ZGExLTg5NjYtYTViM2Q0ODMyYTZlXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_FMjpg_UX1000_.jpg" alt="Osamake">
+            </td>
+            <td>
+                <h3>112. The Case Study of Vanitas</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BYzM4ODUyNzItMjM0NC00MjVlLWFhZWMtMmFlNGFiYTQxZmVkXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_.jpg" alt="The Case Study of Vanitas">
+            </td>
+          </tr>
+          <tr>
+            <td> 
+                <h2>113. Mieruko-chan</h2>
+                <img src="https://m.media-amazon.com/images/M/MV5BYTJmMWU2ZDMtODM5MC00ZWVhLWE3NzMtNjBiMzNkZWRmZTljXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_FMjpg_UX1000_.jpg" alt="Mieruko-chan">
+            </td>
+            <td>
+                <h3>114. The World's Finest Assassin Gets Reincarnated in Another World as an Aristocrat</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BMWMzYWJjYWEtM2JlYi00OTliLWJkYmYtZGU4ZDRhMTY4NmQxXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_FMjpg_UX1000_.jpg" alt="The World's Finest Assassin Gets Reincarnated in Another World as an Aristocrat">
+            </td>
+            <td>
+                <h3>115. The Detective is Already Dead</h3>
+                <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/2aa639bbbb7600222f764a8a11dfc174.jpe" alt="The Detective is Already Dead">
+            </td>
+            <td>
+                <h3>116. The Day I Became a God</h3>
+                <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/0bce41b36c2835bb3ab8f5ee1fac00fa.jpe" alt="The Day I Became a God">
+            </td>
+          </tr>
+          <tr>
+            <td> 
+                <h2>117. Talentless Nana</h2>
+                <img src="https://m.media-amazon.com/images/M/MV5BNzk1Y2ViNGUtNzlhNi00ZTg0LWExN2YtYmI3MGNlMGQ3ZjgwXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_FMjpg_UX1000_.jpg" alt="Talentless Nana">
+            </td>
+            <td>
+                <h3>118. Tada Never Falls in Love</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BNDE1Y2RiZDgtZDdhZi00NDVkLTgzZDctY2RjMmIwMDFhMzI5XkEyXkFqcGdeQXVyODc5Mjc4Nzg@._V1_.jpg" alt="Tada Never Falls in Love">
+            </td>
+            <td>
+                <h3>119. Miss Kobayashi's Dragon Maid</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BZTQ1ODExNGEtODVjYi00MTk4LWI1NTktOTM4NDVkYmZkYmQ3XkEyXkFqcGdeQXVyNjkxNzQ2NDI@._V1_.jpg" alt="Miss Kobayashi's Dragon Maid">
+            </td>
+            <td>
+                <h3>120. The Millionaire Detective Balance: Unlimited</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BMTlkZGVjZTYtZWU1MS00NzY4LWEzNjEtN2EwZDJjMzIzZWQ2XkEyXkFqcGdeQXVyMzI2Mjc1NjQ@._V1_.jpg" alt="The Millionaire Detective Balance">
+            </td>
+          </tr>
+          <tr>
+            <td> 
+                <h2>121. The Genius Prince's Guide to Raising a Nation Out of Debt</h2>
+                <img src="https://m.media-amazon.com/images/M/MV5BMTM0Mzg3M2EtMGJkNS00MDM4LTgzOWYtZTBiMTZhOGM3Mzg3XkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_FMjpg_UX1000_.jpg" alt="The Genius Prince's Guide to Raising a Nation Out of Debt">
+            </td>
+            <td>
+                <h3>122. Clean Freak! Aoyama Kun</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BMTQ5MmMyNGEtMDZiZS00MDc3LTk5OTItZDc4ODhjYzk1YzUwXkEyXkFqcGdeQXVyMjY0MDY4Mjk@._V1_.jpg" alt="Clean Freak">
+            </td>
+            <td>
+                <h3>123. The Irregular at Magic High School</h3>
+                <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/22e8349f49a91ebe0deaba9495653509.jpg" alt="The Irregular at Magic High School">
+            </td>
+            <td>
+                <h3>124. The Greatest Demon Lord Is Reborn as a Typical Nobody</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BMWE4OWY2ODYtMzUwOC00YjlkLTljN2QtMGI4YThhZDFlZmI3XkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_FMjpg_UX1000_.jpg" alt="The Greatest Demon Lord Is Reborn as a Typical Nobody">
+            </td>
+          </tr>
+          <tr>
+            <td> 
+                <h2>125. Sasaki to Miyano</h2>
+                <img src="https://m.media-amazon.com/images/M/MV5BZDQ3OTEwYjktZWU1Zi00YmQ4LThlZWUtMDQ3Zjc0NzZlZGRhXkEyXkFqcGdeQXVyNjc3MjQzNTI@._V1_FMjpg_UX1000_.jpg" alt="Sasaki to Miyano">
+            </td>
+            <td>
+                <h3>126. Aharen Is Indecipherable</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BMzg0OGY3ZjgtZThiMi00ZGMzLTgyYTUtZWI3YTRhYzRjODJiXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_.jpg" alt="Aharen Is Indecipherable">
+            </td>
+            <td>
+                <h3>127. I'm Quitting Heroing</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BMWQ1ZmEzZDgtYTBmNC00M2I2LWFmZjQtOWU1OGJkODE1OTUwXkEyXkFqcGdeQXVyMTQyMTMwOTk0._V1_.jpg" alt="I'm Quitting Heroing">
+            </td>
+            <td>
+                <h3>128. Trapped in a Dating Sim: The World of Otome Games Is Tough for Mobs</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BMDNkMGY5ODUtZTIyNC00MTZhLWIzZTMtYmZhZTk4NjVkYzQ3XkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_.jpg" alt="Trapped in a Dating Sim">
+            </td>
+          </tr>
+          <tr>
+            <td> 
+                <h2>129. The Dawn of the Witch</h2>
+                <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/262142b4ba35e0c6adf31db55e78e017.jpe" alt="The Dawn of the Witch">
+            </td>
+            <td>
+                <h3>130. Hakata Tonkotsu Ramens</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BY2U2ZjY4ZjAtMzBkNi00Y2Q4LWI4N2MtODRhYzNlMzYyYmU1XkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_.jpg" alt="Hakata Tonkotsu Ramens">
+            </td>
+            <td>
+                <h3>131. Monster Musume: Everyday Life with Monster Girls</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BNjQ1NjgyZWItOWJiMC00NjU5LTgzNGMtNzg3YjZjMWNiMDRiXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_.jpg" alt="Monster Musume">
+            </td>
+            <td>
+                <h3>132. Beelzebub</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BNzYyN2Q4ZDgtMGUwOC00NGI5LWEzOGEtYjY5NzU2OTI2OTBhXkEyXkFqcGdeQXVyMTQ3MjMyMTYz._V1_.jpg" alt="Beelzebub">
+            </td>
+          </tr>
+          <tr>
+            <td> 
+                <h2>133. Handa-kun</h2>
+                <img src="https://m.media-amazon.com/images/M/MV5BZWQwYzQ2NWYtNWU0ZC00NzA2LThlNjItOWIzY2U5ODA1NjM5XkEyXkFqcGdeQXVyNDgyODgxNjE@._V1_.jpg" alt="Handa-kun">
+            </td>
+            <td>
+                <h3>134. Miss Caretaker of Sunohara-sou</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BM2NlMzM2NTMtYzRhOC00MjgwLWI5NGEtNTVjYTRlMGVjNzdlXkEyXkFqcGdeQXVyMTUyNjc3NDQ4._V1_FMjpg_UX1000_.jpg" alt="Miss Caretaker of Sunohara-sou">
+            </td>
+            <td>
+                <h3>135. Mother of the Goddess' Dormitory</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BYWU3MTUwMzYtZDk3ZC00NTM4LTkzNWMtNGE2MmM1ZDRlZTJjXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_.jpg" alt= "Mother of the Goddess' Dormitory">
+            </td>
+            <td>
+                <h3>136. Dr. Stone</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BYmU2MzEyMjAtOTQ5Yy00NGMxLTg0NmItMTQ0ZTM5OGY0NjUzXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_FMjpg_UX1000_.jpg" alt="Dr. Stone">
+            </td>
+          </tr>
+          <tr>
+            <td> 
+                <h2>137. Uzaki-chan Wants to Hang Out!</h2>
+                <img src="https://m.media-amazon.com/images/M/MV5BNThkZmQxZDAtYmQ5Mi00N2Y2LTlmNTgtYjA2ZGY5ODE5MzcyXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_FMjpg_UX1000_.jpg" alt="Uzaki-chan Wants to Hang Out!">
+            </td>
+            <td>
+                <h3>138. Skeleton Knight in Another World</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BZWJkZmVjYTItNzRkYi00YWQ3LTk4YmMtZmU5NGRjMmM3ZGI2XkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_.jpg" alt="Skeleton Knight in Another World">
+            </td>
+            <td>
+                <h3>139. Platinum End</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BMGY5MDRlZmYtNjg5Ny00YTI5LWI3MTMtYjliNTExZjNjNjJhXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_FMjpg_UX1000_.jpg" alt="Platinum End">
+            </td>
+            <td>
+                <h3>140. The Strongest Sage with the Weakest Crest</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BZGFjMjU3OWMtZTQ4ZC00Nzg2LWFkZDQtOTU5ZjYyMThiYTVhXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_FMjpg_UX1000_.jpg" alt="The Strongest Sage with the Weakest Crest">
+            </td>
+          </tr>
+          <tr>
+            <td> 
+                <h2>141. The Saint's Magic Power Is Omnipotent</h2>
+                <img src="https://m.media-amazon.com/images/I/81AEbRvlIjL._AC_UF1000,1000_QL80_.jpg" alt="The Saint's Magic Power Is Omnipotent">
+            </td>
+            <td>
+                <h3>142. My Senpai Is Annoying</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BZTk5YmVhYjAtYjQ5MS00MWQ3LTk5NzgtZDM5MGRjMTMyYzcwXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_FMjpg_UX1000_.jpg" alt="My Senpai Is Annoying">
+            </td>
+            <td>
+                <h3>143. Omniscient Reader's Viewpoint</h3>
+                <img src="https://m.media-amazon.com/images/I/81ZuZO5vr2L._AC_UF1000,1000_QL80_.jpg" alt="Omniscient Reader's Viewpoint">
+            </td>
+            <td>
+                <h3>144. Science Fell in Love, So I Tried to Prove It</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BOGI5MTUwYWUtOThmZS00YTgxLTkxZTItOTVhOWM4YTczZTBjXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_FMjpg_UX1000_.jpg" alt="Science Fell in Love, So I Tried to Prove It">
+            </td>
+          </tr>
+          <tr>
+            <td> 
+                <h2>145. World Trigger</h2>
+                <img src="https://m.media-amazon.com/images/M/MV5BMjk2Y2VkNTktY2ViMS00ZjE2LWFjMDgtZDBhODA2OWRlMWI3XkEyXkFqcGdeQXVyODEyMzI2OTE@._V1_.jpg" alt="World Trigger">
+            </td>
+            <td>
+                <h3>146. Wotakoi: Love is Hard for Otaku</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BYmU4ZjM2ZWMtMDFhMy00MGM4LTlkMmEtYTJhZTU5ODAzODk0XkEyXkFqcGdeQXVyNjc3MjQzNTI@._V1_.jpg" alt="Wotakoi">
+            </td>
+            <td>
+                <h3>147. Seitokai Yakuindomo</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BMWJjMGVlNDYtMzMwYy00N2ZiLWJkNmQtMzUxODRlZjg3NGZlXkEyXkFqcGdeQXVyMjc4OTQ1OTA@._V1_FMjpg_UX1000_.jpg" alt="Seitokai Yakuindomo">
+            </td>
+            <td>
+                <h3>148. Ryuo's job is never done!</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BOTE0Njc5OTUtMTBiZC00ZDU1LWEyNTYtNGZjMmYxMzBkOGMxXkEyXkFqcGdeQXVyMjIxNjY2NjE@._V1_.jpg" alt="Ryuo's job is never done!">
+            </td>
+          </tr>
+          <tr>
+            <td> 
+                <h2>149. Kakuriyo: Bed & Breakfast for Spirits</h2>
+                <img src="https://m.media-amazon.com/images/M/MV5BZjdkNDhmNGYtNDU5Ny00ZjllLThkYjgtNGNhMmQ1ZjVkYmYyXkEyXkFqcGdeQXVyNjc3MjQzNTI@._V1_.jpg" alt="Kakuriyo: Bed & Breakfast for Spirits">
+            </td>
+            <td>
+                <h3>150. Horimiya</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BZWNiY2IwMGUtYTk1NC00NmE5LWE4NTItYmQyNDJmMGU2MDMwXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_FMjpg_UX1000_.jpg" alt="Horimiya">
+            </td>
+            <td>
+                <h3>151. Hip Whip Girl: Keijo!!</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BNDE2Y2EzOTktNDEwYy00OGVjLTkzNzYtYzRlYWE1Y2RkZjQ3L2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNjg2MDA4MzE@._V1_FMjpg_UX1000_.jpg" alt="Hip Whip Girl: Keijo">
+            </td>
+            <td>
+                <h3>152. Life with an Ordinary Guy Who Reincarnated into a Total Fantasy Knockout</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BYjJlMTRiNjQtMGMwNS00NzE1LWJlZjMtOGE5MTM4NTA4NmMyXkEyXkFqcGdeQXVyOTE4NzcwNzI@._V1_.jpg" alt="Life with an Ordinary Guy Who Reincarnated into a Total Fantasy Knockout">
+            </td>
+          </tr>
+          <tr>
+            <td> 
+                <h2>153. Combatants Will Be Dispatched!</h2>
+                <img src="https://m.media-amazon.com/images/M/MV5BNzRkZmM0M2QtZDBmMi00ODU0LWI0OWMtOTUzMWRhZDYwODc3XkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_FMjpg_UX1000_.jpg" alt="Combatants Will Be Dispatched!">
+            </td>
+            <td>
+                <h3>154. This Art Club Has a Problem!</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BNTgzM2JmNDItZjQ2MS00YzZkLTg3MGMtMTNkMzk2ZWU1MjlhXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_FMjpg_UX1000_.jpg" alt="This Art Club Has a Problem!">
+            </td>
+            <td>
+                <h3>155. Hensuki: Are you willing to fall in love with a pervert, as long as she's a cutie?</h3>
+                <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/a87ca13df7d60dd6b8c8b934fdbce06e.jpe" alt="Hensuki">
+            </td>
+            <td>
+                <h3>156. O Maidens in Your Savage Season</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BZTY3MDk3MTYtNWIyNC00M2YwLTgzOGItNTBiMTA2MDU5NmJjXkEyXkFqcGdeQXVyMTMzNDc0Nzky._V1_.jpg" alt="O Maidens in Your Savage Season">
+            </td>
+          </tr>
+          <tr>
+            <td> 
+                <h2>157.No-rin</h2>
+                <img src="https://m.media-amazon.com/images/M/MV5BMTBiNGUyZWItZGE5MC00NDYwLTg0ZDYtYWQyZDE4NTQ0MGMwXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_FMjpg_UX1000_.jpg" alt="Nourin">
+            </td>
+            <td>
+                <h3>158. Henjo: Hen na Joshikousei Amaguri Senko</h3>
+                <img src="https://i.redd.it/4ie9l3pzv4x41.jpg" alt="Henjo">
+            </td>
+            <td>
+                <h3>159. Haven't You Heard? I'm Sakamoto</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BYjYxMTcwNTAtNjg3NS00ODA3LWI4MDMtNWVmMzhiMDZiZGRiXkEyXkFqcGdeQXVyNDgyODgxNjE@._V1_.jpg" alt="Haven't You Heard? I'm Sakamoto">
+            </td>
+            <td>
+                <h3>160. In/Spectre</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BYzBmNjIxMDktMjk2MS00MjA0LTljYjQtZWNiYjM2YmU3Y2E1XkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_FMjpg_UX1000_.jpg" alt="In/Spectre">
+            </td>
+          </tr>
+          <tr>
+            <td> 
+                <h2>161. Bungou Stray Dogs</h2>
+                <img src="https://m.media-amazon.com/images/M/MV5BODA4NTE3NDMtYjViZS00NDIzLWE0ZTgtZjkwNDE3NWRlNzRkXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_FMjpg_UX1000_.jpg" alt="Bungou Stray Dogs">
+            </td>
+            <td>
+                <h3>162. Big Order</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BMzBiNjA5MmItY2E2Yi00NzU1LWIzZmMtNjVhODBhNjIyZWE3XkEyXkFqcGdeQXVyMTA3OTEyODI1._V1_.jpg" alt="Big Order">
+            </td>
+            <td>
+                <h3>163. Myriad Colors Phantom World</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BNzFmYThjNTAtNjk1OC00Njg4LThhZDMtYjhhNGU2MTJkMTA5XkEyXkFqcGdeQXVyMjI5MjU5OTI@._V1_.jpg" alt="Myriad Colors Phantom World">
+            </td>
+            <td>
+                <h3>164. The Fruit of Grisaia</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BNTNhNjlmZjQtYWI0OS00MDRmLWExMzgtODg4ODY0OTg4M2VhXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_FMjpg_UX1000_.jpg" alt="The Fruit of Grisaia">
+            </td>
+          </tr>
+          <tr>
+            <td> 
+                <h2>165. Yamada's First Time</h2>
+                <img src="https://m.media-amazon.com/images/M/MV5BNGEwZjhjNWItOTQyOC00MDBjLTlmNzAtYWEyZmZiYjQ3OWZhXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_.jpg" alt="Yamada's First Time">
+            </td>
+            <td>
+                <h3>166. Yamada-kun and the Seven Witches</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BYjg3ZGQ1ODAtOGM3ZC00ZWJhLTgzMzctZTIwMjM3ZTM1YjQ0XkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_.jpg" alt="Yamada-kun and the Seven Witches">
+            </td>
+            <td>
+                <h3>167. Taboo Tattoo</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BZmEyYTc1YWYtZmE5NS00MzE5LWJhODYtNGI5YTY5ZGFiYmZlXkEyXkFqcGdeQXVyMTA3OTEyODI1._V1_.jpg" alt="Taboo Tattoo">
+            </td>
+            <td>
+                <h3>168. Do You Love Your Mom and Her Two-Hit Multi-Target Attacks?</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BNzlhOGFiZTktYmIyYS00ODg5LThhYWItZGY1YmNhNzkwMzY4XkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_.jpg" alt="Okaasan online">
+            </td>
+          </tr>
+          <tr>
+            <td> 
+                <h2>169.Nanana's Buried Treasure</h2>
+                <img src="https://m.media-amazon.com/images/M/MV5BMzllZWRhYTEtNDY0My00NjMyLTljZTUtNjBlYjUwM2U5NmU2XkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_.jpg" alt="Nanana's Buried Treasure">
+            </td>
+            <td>
+                <h3>170. Angel Densetsu</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BNGY2ZmFmNjMtNGJmMS00MDc3LWE3NGMtNTkzMDlmMTNmNmI0XkEyXkFqcGdeQXVyMTU5NDc1MjM5._V1_.jpg" alt="Angel Densetsu">
+            </td>
+            <td>
+                <h3>171. Golden Boy</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BZmE5MjkzNjQtZTExNy00NDU3LWFiNzMtM2FkN2I5ZTQ3NTVlXkEyXkFqcGdeQXVyNDQxNjcxNQ@@._V1_.jpg" alt="Golden Boy">
+            </td>
+            <td>
+                <h3>172. Amagi Briliant Park</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BOTc4ZWNjMDYtOTgxMC00ODU3LWJmYzgtYzkxODZkYmI2MTE0XkEyXkFqcGdeQXVyMjc4OTQ1OTA@._V1_.jpg" alt="Amagi Briliant Park">
+            </td>
+          </tr>
+          <tr>
+            <td> 
+                <h2>173. Strawberry Marshmallow</h2>
+                <img src="https://m.media-amazon.com/images/M/MV5BNThlMDQ5MmMtZjhjYS00MmVlLTlhY2YtODkyODAwYzkwODIxXkEyXkFqcGdeQXVyMTI0ODUzNzQw._V1_.jpg" alt="Strawberry Marshmallow">
+            </td>
+            <td>
+                <h3>174. Plastic Neesan</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BNzdlZjVlZmUtYjBiYi00ZjNkLTg2NjgtN2Q0YTg2MjVjMzg2XkEyXkFqcGdeQXVyNTc3MDU1MTU@._V1_.jpg" alt="Plastic Neesan">
+            </td>
+            <td>
+                <h3>175. Daily Lives of High School Boys</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BZmM4YzcxZDYtNmQwOC00NDM3LTg5MjktYzkxNjNhNDBkNTNiXkEyXkFqcGdeQXVyMTMzNDc0Nzky._V1_.jpg" alt="Daily Lives of High School Boys">
+            </td>
+            <td>
+                <h3>176. Aho Girl</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BNTNhZmY0OWEtMzNjZi00N2Q4LThjMTItYzM4MGI5Y2I0NTMwXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_.jpg" alt="Aho Girl"> 
+            </td>
+          </tr>
+          <tr>
+            <td> 
+                <h2>177. Tomodachi Game</h2>
+                <img src="https://m.media-amazon.com/images/M/MV5BYjU3M2Q4ZTUtMzJlMS00MTRmLWFlMDMtMTlmMjZlNmIxNGQ3XkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_.jpg" alt="Tomodachi Game">
+            </td>
+            <td>
+                <h3>178. Attack on Titan</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BNDFjYTIxMjctYTQ2ZC00OGQ4LWE3OGYtNDdiMzNiNDZlMDAwXkEyXkFqcGdeQXVyNzI3NjY3NjQ@._V1_FMjpg_UX1000_.jpg" alt="Attack on Titan">
+            </td>
+            <td>
+                <h3>179. Steins;Gate </h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BMjUxMzE4ZDctODNjMS00MzIwLThjNDktODkwYjc5YWU0MDc0XkEyXkFqcGdeQXVyNjc3OTE4Nzk@._V1_FMjpg_UX1000_.jpg" alt="STEINS;GATE">
+            </td>
+            <td>
+                <h3>180. Are You Lost?</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BZTc1YTZiMmMtNDQ3Zi00YzkyLWJlZDQtY2IyNmVkMGFkZTRjXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_.jpg" alt="Are You Lost?">
+            </td>
+          </tr>
+          <tr>
+            <td> 
+                <h2>181. Tsukimichi Moonlit Fantasy</h2>
+                <img src="https://m.media-amazon.com/images/M/MV5BMTE3NjRmY2MtMmIyMi00YjUzLThiZGEtNWZiZDM2NDVjNDg3XkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_FMjpg_UX1000_.jpg" alt="Tsukimichi Moonlit Fantasy">
+            </td>
+            <td>
+                <h3>182. Bleach</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BZjE0YjVjODQtZGY2NS00MDcyLThhMDAtZGQwMTZiOWNmNjRiXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_FMjpg_UX1000_.jpg" alt="Bleach">
+            </td>
+            <td>
+                <h3>183. Naruto</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BZGFiMWFhNDAtMzUyZS00NmQ2LTljNDYtMmZjNTc5MDUxMzViXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_.jpg" alt="Naruto">
+            </td>
+            <td>
+                <h3>184. Shinobi no Ittoki</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BZjNmM2Q3NjItNmM2OC00ZmFkLTlhMGItZDJhOWQ3ZmY2ZTM5XkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_.jpg" alt="Shinobi no Ittoki">
+            </td>
+          </tr>
+          <tr>
+            <td> 
+                <h2>185. Welcome to Demon School! Iruma-kun</h2>
+                <img src="https://m.media-amazon.com/images/M/MV5BYTZiOTI4M2QtNWI0ZS00ZTQyLWFjNTgtZmM5YjM3ZDkwMGUzXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_FMjpg_UX1000_.jpg" alt="Welcome to Demon School! Iruma-kun">
+            </td>
+            <td>
+                <h3>186. I'm Standing on a Million Lives</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BNjMzMThlZGItZjM5MS00OTlmLWE3ZjAtYTk4N2U1YmQ0YTcwXkEyXkFqcGdeQXVyODMyNTM0MjM@._V1_.jpg" alt="I'm Standing on a Million Lives">
+            </td>
+            <td>
+                <h3>187. Your Lie in April</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BYThlNWY5ZDgtYTIxNC00ZjdiLWJmNGUtMDFjMDlmZTAzOWFiXkEyXkFqcGdeQXVyNTM4NzAzNjc@._V1_FMjpg_UX1000_.jpg" alt="Your Lie in April">
+            </td>
+            <td>
+                <h3>188. Saekano: How To Raise A Boring Girlfriend</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BMzcwYzVjOGEtN2Q1Yy00MTRmLWE5YzYtMjA3YTczYThjOTAwXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_FMjpg_UX1000_.jpg" alt="Saekano">
+            </td>
+          </tr>
+          <tr>
+            <td> 
+                <h2>189. The Way of the Househusband</h2>
+                <img src="https://m.media-amazon.com/images/M/MV5BOWZhZTE1NDAtODQ5Yy00NDQ3LWE5ZDctMTZjZmU5OGFiZWYwXkEyXkFqcGdeQXVyMTEzMTI1Mjk3._V1_.jpg" alt="The Way of the Househusband">
+            </td>
+            <td>
+                <h3>190. Hellsing Ultimate</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BMTI0MTUxMTc0MF5BMl5BanBnXkFtZTcwODg5NDYzMQ@@._V1_.jpg" alt="Hellsing Ultimate">
+            </td>
+            <td>
+                <h3>191. Asobi Asobase</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BZTBlOTMyNzItNDc1OC00MTg0LThkYmQtOTg5NTI4NjAwNDIxXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_.jpg" alt="Asobi Asobase">
+            </td>
+            <td>
+                <h3>192. Lycoris Recoil</h3>
+                <img src="https://upload.wikimedia.org/wikipedia/en/e/ef/Lycoris_Recoil_key_visual.jpg" alt="Lycoris Recoil">
+            </td>
+          </tr>
+          <tr>
+            <td> 
+                <h2>193. Love Flops</h2>
+                <img src="https://m.media-amazon.com/images/M/MV5BOTZlYzgwNmEtMTZjNi00MWZhLThhOGMtMWQwNGNmZTU5NzBhXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_.jpg" alt="Love Flops">
+            </td>
+            <td>
+                <h3>194. More than a married couple, but not lovers</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BNmM1ZjM3ZWItN2UwNC00YjEwLTkzZjMtZDdjNWU5NWMyYmViXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_FMjpg_UX1000_.jpg" alt="More than a married couple">
+            </td>
+            <td>
+                <h3>195. Beast Tamer</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BZTNmZTUxZmYtZDQyYi00OGYwLTg4YjUtYTZkODU1NWM0MDM0XkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_FMjpg_UX1000_.jpg" alt="Beast Tamer">
+            </td>
+            <td>
+                <h3>196. I've Somehow Gotten Stronger When I Improved My Farm-Related Skills</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BYWFjNDcxNzctZGNkMi00ODNhLWI5YjctYmYzMTU5ZDhkMTBmXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_FMjpg_UX1000_.jpg" alt="My Farm-Related Skills">
+            </td>
+          </tr>
+          <tr>
+            <td> 
+                <h2>197. Engage Kiss</h2>
+                <img src="https://upload.wikimedia.org/wikipedia/en/0/0e/Engage_Kiss_key_visual.jpg" alt="Engage Kiss">
+            </td>
+            <td>
+                <h3>198. The Last Summoner</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BNTMxOGM2ZjgtMGI4ZS00ZmQ1LTg0NzYtOTE1OGJiNTc3MjJkXkEyXkFqcGdeQXVyMTMwNTc3Mw@@._V1_.jpg" alt="The Last Summoner">
+            </td>
+            <td>
+                <h3>199. Akame ga Kill!</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BZjU2ZDZkYmMtYTA3Yi00NTZkLTgzYjgtOTRhMTFiOWFkODZmXkEyXkFqcGdeQXVyNjkyODc3NjQ@._V1_FMjpg_UX1000_.jpg" alt="Akame ga Kill">
+            </td>
+            <td>
+                <h3>200. The Legend of the Legendary Heroes</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BOWQ1MWE5ZTItMWYwYi00OWJlLWIzN2QtY2Y2YzM3MTRkNjJiXkEyXkFqcGdeQXVyMjgzNDQyMjE@._V1_FMjpg_UX1000_.jpg" alt="The Legend of the Legendary Heroes">
+            </td>
+          </tr>
+          <tr>
+            <td> 
+                <h2>201. The Eminence in Shadow</h2>
+                <img src="https://m.media-amazon.com/images/M/MV5BMGU1NzE1Y2UtZmZkOC00ODQ4LTkwNDAtNmE4Yzk3NTA4MThlXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_FMjpg_UX1000_.jpg" alt="The Eminence in Shadow">
+            </td>
+            <td>
+                <h3>202. Gabriel Dropout</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BYTE5OTU3ZmYtZTMxZC00NmJmLTg3ODQtMWUzN2NmNzY4MWE5XkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_FMjpg_UX1000_.jpg" alt="Gabriel Dropout">
+            </td>
+            <td>
+                <h3>203. Bocchi the Rock</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BMzg1Yzg1NjQtZmQyOC00N2MwLWFkYmEtNDI0NGI3ODMzMDExXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_FMjpg_UX1000_.jpg" alt="Bocchi the Rock">
+            </td>
+            <td>
+                <h3>204. Dragon Raja</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BMTViNzc5ZjUtMzA4Yy00ODE0LWFjY2YtOWVlNjc0ZTIxOWM5XkEyXkFqcGdeQXVyNjMxMTE5NTY@._V1_.jpg" alt="Dragon Raja">
+            </td>
+          </tr>
+          <tr>
+            <td> 
+                <h2>205. Boruto: Naruto Next Generations</h2>
+                <img src="https://m.media-amazon.com/images/M/MV5BYjM0MDRkYzctMTNhMS00ODYwLTgwMWItZDYxNDlhOGY1YjRlXkEyXkFqcGdeQXVyMzExMzk5MTQ@._V1_.jpg" alt="Boruto: Naruto Next Generations">
+            </td>
+            <td>
+                <h3>206. The Testament of Sister New Devil</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BYjM0MDRkYzctMTNhMS00ODYwLTgwMWItZDYxNDlhOGY1YjRlXkEyXkFqcGdeQXVyMzExMzk5MTQ@._V1_.jpg" alt="The Testament of Sister New Devil">
+            </td>
+            <td>
+                <h3>207. The Ancient Magus' Bride</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BYjcxNzg3NzUtM2UwNy00MjlmLTg1ZjgtYTcwZGYyNDZiNmNkXkEyXkFqcGdeQXVyMzExMzk5MTQ@._V1_.jpg" alt="The Ancient Magus' Bride">
+            </td>
+            <td>
+                <h3>208. YU-NO: A Girl Who Chants Love at the Bound of this World</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BMWNmMGNlYjQtNWY2Ny00NDNkLWFmMmMtZTJiMTYzOTMzMDNkXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_.jpg" alt="Yu-no">
+            </td>
+          </tr>
+          <tr>
+            <td> 
+                <h2>209. Haganai: I Don't Have Many Friends</h2>
+                <img src="https://m.media-amazon.com/images/M/MV5BZWZjMGUzNjQtZTI1NC00M2IxLTllZjQtZmY3MWUyNTdhNDQ3XkEyXkFqcGdeQXVyMTA3OTEyODI1._V1_.jpg" alt="Haganai">
+            </td>
+            <td>
+                <h3>210. YJK’s unusual affection</h3>
+                <img src="https://kenmei.b-cdn.net/covers/manga_series/21633/cover/jpeg-thumbnail-large-fd5df39196ad83b61d283a48141551f8.jpeg" alt="YJK">
+            </td>
+            <td>
+                <h3>211. My Instant Death Ability is Overpowered</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BZTY3MTI3MzEtOWZlYy00YmI2LWE1ZTEtYjI5ZTZhMTYzZWUyXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_FMjpg_UX1000_.jpg" alt="My Instant Death Ability is So Overpowered, No One in This Other World Stands a Chance Against Me! —AΩ">
+            </td>
+            <td>
+                <h3>212. Gintama</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BMDhmNjUxM2UtZTY2Zi00OTQ0LWExNjgtNDhkNTUyMjQ3MmU5XkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_.jpg" alt="Gintama">
+            </td>
+          </tr>
+          <tr>
+            <td> 
+                <h2>213. Eromanga Sensei</h2>
+                <img src="https://m.media-amazon.com/images/M/MV5BN2UwMWIyNDEtZGExOS00N2QwLWI4ZWUtMjk1NWRlMGVkZTE0XkEyXkFqcGdeQXVyNTI1MDU0MzM@._V1_FMjpg_UX1000_.jpg" alt="Eromanga Sensei">
+            </td>
+            <td>
+                <h3>214. Baki the Grappler</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BMDViZTQ0NTQtNzAzZS00ZDgzLWI1NDItMTJlMWMzMmY0ZGIzXkEyXkFqcGdeQXVyMTEwNDU1MzEy._V1_.jpg" alt="Baki the Grappler">
+            </td>
+            <td>
+                <h3>215. The Ice blade Sorcerer Shall Rule the World</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BZGQzM2VhZTktOGEyNy00OTE5LWJjMTItNGFkZDg5YmY1YmUzXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_.jpg" alt="The Ice blade Sorcerer Shall Rule the World">
+            </td>
+            <td>
+                <h3>216. Reborn to Master the Blade</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BMzkwMDVmYWMtNmQyMy00NjZjLTlkYTUtNzFmNTFkMjZlNzQyXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_FMjpg_UX1000_.jpg" alt="Reborn to Master the Blade">
+            </td>
+          </tr>
+          <tr>
+            <td> 
+                <h2>217. Tomo-chan Is a Girl!</h2>
+                <img src="https://m.media-amazon.com/images/M/MV5BY2ZlNWRmYWMtOTg2OC00ODA4LWJiMTUtODBmZjMwZGYzYWMzXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_FMjpg_UX1000_.jpg" alt="Tomo-chan Is a Girl!">
+            </td>
+            <td>
+                <h3>218. Campfire Cooking in Another World with My Absurd Skill</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BMGZmYjQzMmUtMDg3MC00MmQyLWI4M2YtMjczOGJjNjhiMmM0XkEyXkFqcGdeQXVyMTIzNDEwODY@._V1_FMjpg_UX1000_.jpg" alt="Campfire Cooking in Another World with My Absurd Skill">
+            </td>
+            <td>
+                <h3>219. Kubo Won't Let Me Be Invisible</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BNzgzNWIyMzQtZWJkOC00MTNiLTg2MDMtMjlhOWM2ZWU4NjRhXkEyXkFqcGdeQXVyOTE4NzcwNzI@._V1_.jpg" alt="Kubo Won't Let Me Be Invisible">
+            </td>
+            <td>
+                <h3>220. The Angel Next Door Spoils Me Rotten</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BMDAxM2Q1OTUtMjcwZS00MmE5LWE1ZDUtMmNkY2Y2ZGM4NTM1XkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_FMjpg_UX1000_.jpg" alt="The Angel Next Door Spoils Me Rotten">
+            </td>
+          </tr>
+          <tr>
+            <td> 
+                <h2>221. My Life as Inukai-san's Dog</h2>
+                <img src="https://m.media-amazon.com/images/M/MV5BZGYxM2NhZjUtNTMzOC00NGVmLTgxMWYtOWRhMDJjNGE5ZTE3XkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_FMjpg_UX1000_.jpg" alt="My Life as Inukai-san's Dog">
+            </td>
+            <td>
+                <h3>222. Boredom Causes Death</h3>
+                <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx156087-0LAtkHTAafoP.jpg" alt="Boredom Causes Death">
+            </td>
+            <td>
+                <h3>223. Cells at Work!</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BYWUzMzU4MjAtNjY0Yi00NzliLThmY2QtODViZWY0Y2NjOWM4XkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_.jpg" alt="Cells at Work!">
+            </td>
+            <td>
+                <h3>224. Love After World Domination</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BMDk2ZGU4NzAtODJkOC00NTA4LTk1ZmQtODZiMDhiNGI3ODY0XkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_FMjpg_UX1000_.jpg" alt="Love After World Domination">
+            </td>
+          </tr>
+          <tr>
+            <td> 
+                <h2>225.The Reincarnation of the Strongest Exorcist in Another World</h2>
+                <img src="https://m.media-amazon.com/images/M/MV5BMjVlNGY3MDEtZjFkMy00YTcwLTgwZmYtNDlkN2NjNDVlNDg4XkEyXkFqcGdeQXVyMTUwMTA0Nzc2._V1_FMjpg_UX1000_.jpg" alt="The Reincarnation of the Strongest Exorcist in Another World">
+            </td>
+            <td>
+                <h3>226. Farming Life in Another World</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BYjA4Mjc5OWYtMTQ1Yy00MWQyLTg3NGYtZTA0NjZiYzI0NDhhXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_FMjpg_UX1000_.jpg" alt="Farming Life in Another World">
+            </td>
+            <td>
+                <h3>227. Tsuredure Children</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BZmZlY2UwNWUtOTVmOS00ODllLWExMDQtYjcyNWQ0ZDVkZGZjXkEyXkFqcGdeQXVyMTQyMTMwOTk0._V1_.jpg" alt="Tsuredure Children">
+            </td>
+            <td>
+                <h3>228. Black Butler</h3>
+                <img src="https://m.media-amazon.com/images/M/MV5BNzE3MmQ4ZjEtYmQxNC00MWJmLWJkMGItYWQwNTk2ZmJlZTgxXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_FMjpg_UX1000_.jpg" alt="Black Butler">
+            </td>
+          </tr>
+
+
+
     </table>
     <script src="script.js"></script>
 </body>
