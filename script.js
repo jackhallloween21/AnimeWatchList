@@ -29,8 +29,8 @@ document.getElementById('searchBar').addEventListener('input', function() {
         let rowMatch = false;
 
         Array.from(animeCells).forEach(cell => {
-            const animeNameElem = cell.getElementsByTagName('h2')[0];
-            if (animeNameElem) {
+            const animeNameElems = cell.querySelectorAll('h2, h3');
+            animeNameElems.forEach(animeNameElem => {
                 const animeName = animeNameElem.innerText;
                 const animeNameLower = animeName.toLowerCase();
 
@@ -43,7 +43,7 @@ document.getElementById('searchBar').addEventListener('input', function() {
                     // Reset the innerHTML to the original name if it doesn't match
                     animeNameElem.innerHTML = animeName;
                 }
-            }
+            });
         });
 
         // Show or hide the row based on whether there's a match
