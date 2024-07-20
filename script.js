@@ -40,11 +40,13 @@ document.getElementById('searchBar').addEventListener('input', function() {
                     animeNameElem.innerHTML = newAnimeName;
                     rowMatch = true;
                 } else {
-                    animeNameElem.innerHTML = animeName; // Reset the innerHTML
+                    // Reset the innerHTML to the original name if it doesn't match
+                    animeNameElem.innerHTML = animeName;
                 }
             }
         });
 
+        // Show or hide the row based on whether there's a match
         row.style.display = rowMatch ? '' : 'none';
     });
 });
