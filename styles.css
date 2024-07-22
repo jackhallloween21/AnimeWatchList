@@ -21,8 +21,12 @@ body.dark-mode {
 header {
     margin: auto;
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-shadow: 0 0 5px rgba(3, 2, 19, 0); /* Subtle text shadow */
+    box-shadow: 0 0 15px 5px rgba(221, 3, 241, 0.2); /* Stronger glow with box-shadow */
 }
+
+
+
 
 header h1 {
     margin: 0;
@@ -50,6 +54,37 @@ h2 {
     font-size: 1.2em;
    
 }
+h2, h3 {
+  text-shadow: 0 0 0 #fff;
+  transition: text-shadow 0.3s ease;
+}
+
+h2:hover, h3:hover {
+  text-shadow: 0 0 20px #fff; /* Adjust spread and color as needed */
+}
+
+h2:hover, h3:hover {
+  animation: bounce 0.5s ease-out; /* Adjust duration and easing as needed */
+}
+
+h2:hover, h3:hover {
+  text-shadow: 0 0 5px #15e49f, 0 0 10px #d18181, 0 0 15px #666; /* Darker, more subtle glow for light mode */
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px); 
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+
 
 img {
     width: 18rem;
@@ -299,3 +334,5 @@ img:hover
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
   }
+
+  
